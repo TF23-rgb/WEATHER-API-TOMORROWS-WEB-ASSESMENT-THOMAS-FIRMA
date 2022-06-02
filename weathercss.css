@@ -14,8 +14,10 @@
   }
 
   .header{
+
       margin:40px;
       color:white;      
+
   }
 
   p{
@@ -25,9 +27,9 @@
   nav{
 
     display:flex;
-    width:100%;
     align-items:center;
     flex-wrap: wrap;
+    width:100%;   
     padding: 10px 0;
     font-size: 20px;
     
@@ -131,18 +133,21 @@ nav ul li a:hover::after{
   
   input[type="submit"]{
 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
     padding: 15px 30px;
     background: #ffffff;
     border: none;
     border-radius: 1px;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Nunito', sans-serif;
     font-weight:bold;
     font-size: 20px;
 
   }
   
   .input input[type="text"]{
+
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
 
     color:azure;
     width: 500px;
@@ -152,8 +157,6 @@ nav ul li a:hover::after{
    
     border: none;
     border-radius: 1px;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Nunito', sans-serif;
     font-weight:bold;
     font-size: 20px;
 
@@ -171,6 +174,7 @@ nav ul li a:hover::after{
     
     padding: 10px 22px;
     text-align: center;
+
     text-decoration: none;
     display: inline-block;
     
@@ -183,6 +187,7 @@ nav ul li a:hover::after{
 
   display: flex;
   justify-content: center;
+  
   align-items: center;
   height: 200px;
   

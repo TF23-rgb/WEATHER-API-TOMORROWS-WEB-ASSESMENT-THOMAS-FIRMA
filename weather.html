@@ -28,10 +28,13 @@
 
 
   <div class="main">
+    
      <div class="header">
+
        <h1>Weather API</h1>
        <p>Enter a city into the box and it will display the current temperature and forecast of the chosen city </p>
        <p>Displays forecasts and temperatures from thousands of cities around the world</p>
+
      </div>
   
 
@@ -60,7 +63,11 @@
 
       <p class="temp"></p>
 
+
       <p class="clouds"></p>
+
+
+
       <p class="desc"></p>
 
     </div>
@@ -72,6 +79,9 @@
 
 
     <button id="button1">Full Screen</button>
+
+
+
     <button id="button2">Exit</button>
 
 
@@ -82,12 +92,19 @@
  <script type="text/javascript">
 
      var button1 =document.getElementById("button1")
+
+
      var button2 =document.getElementById("button2")
+
      var ex1 =document.documentElement;
+
      button1.addEventListener("click",()=>{
 
+
          if(ex1.requestFullscreen){
+
              ex1.requestFullscreen()
+
          }
 
      })
@@ -95,7 +112,9 @@
      button2.addEventListener("click",()=>{
 
          if(document.exitFullscreen){
+
              document.exitFullscreen()
+
          }
          
      })
@@ -109,4 +128,8 @@
 
 
 </body>
+
+
+
+
 </html>

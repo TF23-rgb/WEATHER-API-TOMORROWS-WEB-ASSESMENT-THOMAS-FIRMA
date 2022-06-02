@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather API</title>
+  <link rel="stylesheet" href="weathercss.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <nav>
+        <ul>
+          
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+
+  <div class="main">
+     <div class="header">
+       <h1>Weather API</h1>
+       <p>Enter a city into the box and it will display the current temperature and forecast of the chosen city </p>
+       <p>Displays forecasts and temperatures from thousands of cities around the world</p>
+     </div>
+  
+
+    
+
+  
+     <div class="input">
+
+
+       <input type="text" placeholder="" class="input_text">
+
+       <input type="submit" value="Submit" class="submit">
+
+     </div>
+
+     
+  </div>
+
+
+  <div class="container">
+
+
+    <div class="card">
+        
+      <h1 class="name" id="name"></h1>
+
+      <p class="temp"></p>
+
+      <p class="clouds"></p>
+      <p class="desc"></p>
+
+    </div>
+
+
+  </div>
+
+  <div class="buttons">
+
+
+    <button id="button1">Full Screen</button>
+    <button id="button2">Exit</button>
+
+
+ </div>
+
+
+
+ <script type="text/javascript">
+
+     var button1 =document.getElementById("button1")
+     var button2 =document.getElementById("button2")
+     var ex1 =document.documentElement;
+     button1.addEventListener("click",()=>{
+
+         if(ex1.requestFullscreen){
+             ex1.requestFullscreen()
+         }
+
+     })
+
+     button2.addEventListener("click",()=>{
+
+         if(document.exitFullscreen){
+             document.exitFullscreen()
+         }
+         
+     })
+
+
+ </script>
+
+
+<script src="java.js"></script>
+
+
+
+</body>
+</html>
